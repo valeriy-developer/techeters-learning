@@ -1,0 +1,26 @@
+:root {
+  --black: #212022;
+  --bg: #f4f4f4;
+  --white: #ffffff;
+  --red: #e73737;
+}
+
+//screen config
+$maxWidth: 1920;
+$minWidth: 375;
+
+//breakpoints
+$uls: 2100px;
+$ls: 1366px;
+$br1: 1060px;
+$br2: 960px;
+$br3: 768px;
+$br4: 460px;
+
+//easings
+$easing: cubic-bezier(0.16, 1, 0.3, 1);
+
+// layouts
+$g-offset: vw(56);
+$g-sm: 32px;
+$g-s: 20px;

@@ -1,0 +1,46 @@
+@use 'sass:math';
+
+@function em($size, $context: 16) {
+  @return (math.div($size, $context)) * 1em;
+}
+
+@function img-url($image) {
+  @return url('../img/#{$image}');
+}
+
+@mixin image($image) {
+  background-image: img-url($image);
+}
+
+@mixin smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin smooth-font {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function size($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - $minWidth;
+  @return calc(
+    #{$mobSize + px} + #{$addSize} *
+      ((100vw - #{$minWidth + px}) / #{$maxWidth})
+  );
+}
+
+@function vw($px) {
+  $inVW: math.div($px, 1920) * 100;
+  @return #{$inVW}vw;
+}
+
+@function vh($px) {
+  $inVH: math.div($px, 1080) * 100;
+  @return #{$inVH}vh;
+}
+
+@function toimg($width, $height) {
+  $resolution: (math.div($height, $width)) * 100;
+  @return #{$resolution + '%'};
+}
