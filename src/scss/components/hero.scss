@@ -7,6 +7,10 @@
     @media (max-width: $br1) {
         height: auto;
     }
+
+    @media (max-width: $br4) {
+        padding: 0;
+    }
 }
 
 .hero__bg {
@@ -21,6 +25,14 @@
     background-position: 50% 50%;
     border-radius: 40px;
     z-index: -1;
+
+    @media (max-width: $br4) {
+        border-radius: 30px;
+    }
+
+    @media (max-width: $br4) {
+        border-radius: 0;
+    }
 }
 
 .hero__wrapper {
@@ -30,7 +42,7 @@
 
 .hero__button {
     font-family: inherit;
-    font-size: 16px;
+    font-size: vw(16);
     line-height: 100%;
     @include col-s(4);
     @include col-end(5);
@@ -38,8 +50,8 @@
     @include row-end(4);
     margin-top: vw(85);
     display: block;
-    height: 186px;
-    width: 186px;
+    height: vw(186);
+    width: vw(186);
     border-radius: 50%;
 
     @media (max-width: $br1) {
@@ -47,6 +59,15 @@
         @include col-end(5);
         @include row-s(4);
         @include row-end(4);
+        font-size: 16px;
+        height: 186px;
+        width: 186px;
+    }
+
+    @media (max-width: $br3) {
+        font-size: vw(36);
+        height: vw(386);
+        width: vw(386);
     }
 
     @media (max-width: $br4) {
@@ -133,6 +154,8 @@
     }
 
     @media (max-width: $br4) {
+        width: 150px;
+        font-size: 12px;
         @include col-s(1);
         @include col-end(2);
         @include row-s(1);
