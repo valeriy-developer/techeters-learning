@@ -1,0 +1,48 @@
+.home-2 {
+    margin-top: vw(160);
+
+    @media (max-width: $br1) {
+        margin-top: 100px;
+    }
+
+    @media (max-width: $br3) {
+        margin-top: 52px;
+    }
+}
+
+.home-2__content {
+    @media (max-width: $br2) {
+        display: block;
+    }
+}
+
+.home-2__text {
+    @include col-s(1);
+    @include col-end(7);
+    width: 104%;
+
+    @media (max-width: $br1) {
+        @include col-end(6);
+    }
+}
+
+.home-2__img-wrapper {
+    @include col-s(9);
+    @include col-end(12);
+    border-radius: vw(50);
+    overflow: hidden;
+
+    @media (max-width: $br1) {
+        @include col-s(7);
+        border-radius: 50px;
+    }
+
+    @media (max-width: $br2) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: $br3) {
+        border-radius: 20px;
+
+    }
+}

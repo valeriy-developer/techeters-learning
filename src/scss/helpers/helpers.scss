@@ -35,6 +35,11 @@
   @return #{$inVW}vw;
 }
 
+@function vwBr1($px) {
+  $inVW: math.div($px, 1080) * 100;
+  @return #{$inVW}vw;
+}
+
 @function vh($px) {
   $inVH: math.div($px, 1080) * 100;
   @return #{$inVH}vh;

@@ -1,6 +1,62 @@
+.section {
+  margin-top: vw(300);
+  @media (max-width: $br1) {
+    margin-top: 200px;
+  }
+  @media (max-width: $br3) {
+    margin-top: 100px;
+  }
+}
+
 .container {
-  padding-left: size(146, 20);
-  padding-right: size(146, 20);
+  padding-left: vw(38);
+  padding-right: vw(38);
   width: 100%;
   position: relative;
+  
+  @media (max-width: $br1) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media (max-width: $br3) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.hero__container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: vw(30);
+  @media (max-width: $br1) {
+    column-gap: 30px;
+  }
+  @media (max-width: $br3) {
+    column-gap: 20px;
+  }
+  @media (max-width: $br4) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@mixin col-s($value) {
+  grid-column-start: $value;
+}
+
+@mixin col-end($value) {
+  grid-column-end: $value + 1;
+}
+
+@mixin row-s($value) {
+  grid-row-start: $value;
+}
+
+@mixin row-end($value) {
+  grid-row-end: $value + 1;
 }
