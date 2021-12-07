@@ -79,6 +79,8 @@
         font-size: 16px;
         height: 186px;
         width: 186px;
+        align-items: center;
+        justify-items: center;
     }
 }
 
@@ -182,10 +184,12 @@
     @media (max-width: $br4) {
         margin-top: -30px;
         margin-bottom: -30px;
-        @include col-s(2);
+        margin-left: auto;
+        width: 80%;
+        @include col-s(1);
         @include col-end(4);
         @include row-s(3);
-        @include row-end(3);;
+        @include row-end(3);
     }
 }
 

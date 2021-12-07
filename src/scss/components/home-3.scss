@@ -1,0 +1,148 @@
+.home-3 {
+    margin-top: vw(300);
+}
+
+.home-3__base {
+    @include reg;
+    font-size: vw(176);
+    line-height: 100%;
+
+    @media (max-width: $br4) {
+        font-size: 48px;
+    }
+}
+
+.home-3__basic--1 {
+    @include col-s(1);
+    @include col-end(7);
+    @include row-s(1);
+    @include row-end(1);
+
+    @media (max-width: $br4) {
+        @include col-s(1);
+        @include col-end(3);
+    }
+}
+
+.home-3__basic--2 {
+    @include col-s(4);
+    @include col-end(7);
+    @include row-s(2);
+    @include row-end(2);
+    filter: blur(6px);
+
+    @media (max-width: $br1) {
+        @include col-s(2);
+        @include col-end(6);
+    }
+
+    @media (max-width: $br4) {
+        @include col-s(2);
+        @include col-end(3);
+    }
+}
+
+.home-3__basic--3 {
+    margin-left: vw(50);
+    @include col-s(5);
+    @include col-end(12);
+    @include row-s(3);
+    @include row-end(3);
+
+    @media (max-width: $br1) {
+        @include col-s(3);
+        @include col-end(12);
+    }
+
+    @media (max-width: $br4) {
+        @include col-s(1);
+        @include col-end(4);
+        margin-left: auto;
+    }
+}
+
+.home-3__text-filter {
+    @include ticket;
+}
+
+.home-3__desc {
+    @include reg;
+    font-size: vw(20);
+    line-height: 150%;
+    margin-top: vw(96);
+    margin-bottom: vw(88);
+
+    @media (max-width: $br1) {
+        font-size: 14px;
+    }
+}
+
+.home-3__desc--1 {
+    @include col-s(4);
+    @include col-end(7);
+    @include row-s(4);
+    @include row-end(4);
+    width: vw(562);
+
+    @media (max-width: $br1) {
+        @include col-s(2);
+        @include col-end(6);
+        width: vw(700);
+    }
+
+    @media (max-width: $br4) {
+        @include col-s(1);
+        @include col-end(4);
+        @include row-s(4);
+        @include row-end(4);
+        width: auto;
+    }
+}
+
+.home-3__desc--2 {
+    @include col-s(9);
+    @include col-end(12);
+    @include row-s(4);
+    @include row-end(4);
+    width: vw(562);
+
+    @media (max-width: $br1) {
+        @include col-s(7);
+        @include col-end(11);
+        width: vw(700);
+    }
+
+    @media (max-width: $br4) {
+        @include col-s(1);
+        @include col-end(4);
+        @include row-s(5);
+        @include row-end(5);
+        width: auto;
+    }
+}
+
+.home-3__img-wrapper {
+    @include col-s(4);
+    @include col-end(9);
+    @include row-s(5);
+    @include row-end(5);
+    overflow: hidden;
+    border-radius: vw(50);
+
+    @media (max-width: $br1) {
+        @include col-s(2);
+        @include col-end(11);
+        border-radius: 50px;
+    }
+
+    @media (max-width: $br3) {
+        border-radius: 20px;
+    }
+
+    @media (max-width: $br4) {
+        @include col-s(1);
+        @include col-end(4);
+        @include row-s(6);
+        @include row-end(6);
+    }
+}
