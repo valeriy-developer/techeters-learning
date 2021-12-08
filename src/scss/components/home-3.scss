@@ -8,7 +8,7 @@
     line-height: 100%;
 
     @media (max-width: $br4) {
-        font-size: 48px;
+        font-size: vwBr1(120);
     }
 }
 
@@ -39,6 +39,7 @@
     @media (max-width: $br4) {
         @include col-s(2);
         @include col-end(3);
+        filter: blur(3px);
     }
 }
 
@@ -55,9 +56,9 @@
     }
 
     @media (max-width: $br4) {
+        margin-left: 40px;
         @include col-s(1);
         @include col-end(4);
-        margin-left: auto;
     }
 }
 

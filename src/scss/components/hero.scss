@@ -71,11 +71,13 @@
     }
 
     @media (max-width: $br4) {
-        @include col-s(2);
-        @include col-end(3);
+        @include col-s(1);
+        @include col-end(4);
         @include row-s(5);
         @include row-end(5);
         margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 16px;
         height: 186px;
         width: 186px;
@@ -125,7 +127,8 @@
         @include col-s(1);
         @include col-end(3);
         @include row-s(4);
-        @include row-end(4);;
+        @include row-end(4);
+        filter: blur(5px);
     }
 }
 
@@ -156,6 +159,8 @@
     }
 
     @media (max-width: $br4) {
+        margin-top: 60px;
+        margin-bottom: 20px;
         width: 150px;
         font-size: 12px;
         @include col-s(1);
