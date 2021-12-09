@@ -1,0 +1,41 @@
+.footer {
+    height: 100vh;
+    padding: 0.62vw;
+    color: white;
+
+    @media (max-width: $br1) {
+        height: auto;
+    }
+
+    @media (max-width: $br4) {
+        padding: 0;
+    }
+}
+
+.footer__container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.footer__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/img/home/home-5 bg.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 40px;
+    z-index: -1;
+
+    @media (max-width: $br1) {
+        border-radius: 30px;
+    }
+
+    @media (max-width: $br4) {
+        border-radius: 0;
+    }
+}
