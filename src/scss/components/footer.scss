@@ -1,219 +1,223 @@
 .footer {
-    height: 100%;
-    padding: 0.62vw;
-    color: white;
+  height: 100%;
+  padding: 0.62vw;
+  color: white;
 
-    @media (max-width: $br1) {
-        height: auto;
-    }
+  @media (max-width: $br1) {
+    height: auto;
+  }
 
-    @media (max-width: $br4) {
-        padding: 0;
-    }
+  @media (max-width: $br4) {
+    padding: 0;
+  }
 }
 
 .footer__container {
-    height: 100%;
-    width: 100%;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .footer__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('/img/home/home-5 bg.png');
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    border-radius: 40px;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('/img/home/home-5 bg.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 40px;
+  z-index: -1;
 
-    @media (max-width: $br1) {
-        border-radius: 30px;
-    }
+  @media (max-width: $br1) {
+    border-radius: 30px;
+  }
 
-    @media (max-width: $br4) {
-        border-radius: 0;
-    }
+  @media (max-width: $br4) {
+    border-radius: 0;
+  }
 }
 
 .footer__text--1 {
-    @include col-s(1);
-    @include col-end(6);
-    @include row-s(1);
-    @include row-end(1);
-    @include reg;
-    font-size: vw(182);
-    line-height: 1em;
-    position: relative;
+  @include col-s(1);
+  @include col-end(6);
+  @include row-s(1);
+  @include row-end(1);
+  @include reg;
+  font-size: vw(182);
+  line-height: 1em;
+  position: relative;
 }
 
 .footer__text--2 {
-    @include col-s(4);
-    @include col-end(10);
-    @include row-s(2);
-    @include row-end(2);
-    @include reg;
-    font-size: vw(182);
-    line-height: 1em;
-    position: relative;
+  @include col-s(4);
+  @include col-end(10);
+  @include row-s(2);
+  @include row-end(2);
+  @include reg;
+  font-size: vw(182);
+  line-height: 1em;
+  position: relative;
 }
 
 .footer__title-style {
-    @include ticket;
+  @include ticket;
 }
 
 .footer__title {
-    margin-bottom: 130px;
+  margin-bottom: 130px;
 }
 
 .footer__about {
-    @include col-s(1);
-    @include col-end(3);
-    @include row-s(3);
-    @include row-end(3);
+  @include col-s(1);
+  @include col-end(3);
+  @include row-s(3);
+  @include row-end(3);
 }
 
 .footer__social {
-    @include col-s(4);
-    @include col-end(7);
-    @include row-s(3);
-    @include row-end(3);
+  @include col-s(4);
+  @include col-end(7);
+  @include row-s(3);
+  @include row-end(3);
 }
 
 .footer__form {
-    @include col-s(8);
-    @include col-end(12);
-    @include row-s(3);
-    @include row-end(3);
+  @include col-s(8);
+  @include col-end(12);
+  @include row-s(3);
+  @include row-end(3);
 }
 
 .footer__desc {
-    @include reg;
-    font-size: vw(20);
-    line-height: 130%;
-    color: var(--white);
+  @include reg;
+  font-size: vw(20);
+  line-height: 130%;
+  color: var(--white);
 }
 
 .footer__button {
-    @include col-s(11);
-    @include col-end(12);
-    @include row-s(4);
-    @include row-end(4);
-    font-family: inherit;
-    font-size: vw(16);
-    line-height: 100%;
-    margin-top: vw(40);
-    display: block;
-    height: vw(186);
-    width: vw(186);
-    border-radius: 50%;
+  @include col-s(11);
+  @include col-end(12);
+  @include row-s(4);
+  @include row-end(4);
+  font-family: inherit;
+  font-size: vw(16);
+  line-height: 100%;
+  margin-top: vw(40);
+  display: block;
+  height: vw(186);
+  width: vw(186);
+  border-radius: 50%;
 }
 
 .footer__small-text--1 {
-    @include col-s(1);
-    @include col-end(3);
-    @include row-s(5);
-    @include row-end(5);
+  @include col-s(1);
+  @include col-end(3);
+  @include row-s(5);
+  @include row-end(5);
 }
 
 .footer__small-text--2 {
-    @include col-s(4);
-    @include col-end(12);
-    @include row-s(5);
-    @include row-end(5);
+  @include col-s(4);
+  @include col-end(12);
+  @include row-s(5);
+  @include row-end(5);
 }
 
 .footer__form {
-    @include col-s(8);
-    @include col-end(12);
+  @include col-s(8);
+  @include col-end(12);
 }
 
 .form {
-    position: relative;
+  position: relative;
 }
 
 .form__inputs {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: vw(20);
-    row-gap: vw(40);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: vw(20);
+  row-gap: vw(40);
 }
 
 .input-wrapper {
-    position: relative;
-    width: 100%;
-    color: #bdbdbd;
-    text-transform: uppercase;
-    font-size: vw(16);
+  position: relative;
+  width: 100%;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  font-size: vw(16);
 }
 
 .input-wrapper:first-of-type {
-    @include col-s(1);
-    @include col-end(3);
+  @include col-s(1);
+  @include col-end(3);
 }
 
 .input-wrapper:nth-of-type(2) {
-    @include col-s(4);
-    @include col-end(6);
+  @include col-s(4);
+  @include col-end(6);
 }
 
 .input-wrapper:nth-of-type(3) {
-    @include col-s(1);
-    @include col-end(2);
+  @include col-s(1);
+  @include col-end(2);
 }
 
 .input-wrapper:nth-of-type(4) {
-    @include col-s(3);
-    @include col-end(4);
+  @include col-s(3);
+  @include col-end(4);
 }
 
 .input-wrapper:nth-of-type(5) {
-    @include col-s(5);
-    @include col-end(6);
+  @include col-s(5);
+  @include col-end(6);
 }
 
 .input-wrapper:nth-of-type(6) {
-    @include col-s(1);
-    @include col-end(6);
+  @include col-s(1);
+  @include col-end(6);
 }
 
 textarea {
-    border: none;
-    resize: none;
+  border: none;
+  resize: none;
 }
 
 .input {
-    border-radius: 0;
-    background-color: transparent;
-    width: 100%;
-    border-bottom: 1px solid var(--white);
-    padding-bottom: 6px;
-    padding-top: 3px;
-    line-height: 1em;
-    color: var(--white);
-    font-size: vw(16);
-
-    // &:focus {
-    //     ~ .label {
-    //         opacity: 0;
-    //     }
-    // }
+  border-radius: 0;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 6px;
+  padding-top: 3px;
+  line-height: 1em;
+  color: var(--white);
+  font-size: vw(16);
+  &.active {
+    ~ .label {
+      transform: translateY(-14px);
+      font-size: 10px;
+      opacity: 0.7;
+    }
+  }
 }
 
 .label {
-    position: absolute;
-    font-size: vw(16);
-    left: 0;
-    top: 3px;
-    line-height: 1em;
-    pointer-events: none;
+  position: absolute;
+  font-size: vw(16);
+  left: 0;
+  top: 3px;
+  line-height: 1em;
+  pointer-events: none;
+  transition: transform, opacity, font-size;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
 }
 
 abbr {
-    color: var(--red);
-    text-decoration: none !important;
+  color: var(--red);
+  text-decoration: none !important;
 }
