@@ -269,35 +269,14 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 35px;
+  @include reg;
+  opacity: 0.7;
+  font-size: vw(20);
+  line-height: 130%;
 
   @media (max-width: $br1) {
     margin-top: 85px;
-  }
-
-  @media (max-width: $br4) {
-    justify-content: center;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-top: 0;
-  }
-}
-
-.footer__small-text--1 {
-  @include reg;
-  opacity: 0.7;
-  font-size: 20px;
-  line-height: 130%;
-}
-
-.footer__small-text--2 {
-  @include reg;
-  opacity: 0.7;
-  font-size: 20px;
-  line-height: 130%;
-
-  @media (max-width: $br4) {
-    margin-bottom: 10px;
-    margin-top: 120px;
+    font-size: 14px;
   }
 }
 
@@ -342,6 +321,25 @@
   color: #bdbdbd;
   text-transform: uppercase;
   font-size: 16px;
+  &.active {
+    > .label {
+      transform: translateY(-14px);
+      font-size: 10px;
+      opacity: 0.7;
+    }
+  }
+  &.error {
+    > .label {
+      color: #e73737;
+    }
+    > .input {
+      border-bottom-color: #e73737;
+    }
+    > .form__input-error {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .input-wrapper:first-of-type {
@@ -427,7 +425,7 @@
     @include col-s(9);
     @include col-end(12);
   }
-  
+
   @media (max-width: $br3) {
     @include col-s(1);
     @include col-end(4);
@@ -470,13 +468,6 @@ textarea {
   line-height: 1em;
   color: var(--white);
   font-size: 16px;
-  &.active {
-    ~ .label {
-      transform: translateY(-14px);
-      font-size: 10px;
-      opacity: 0.7;
-    }
-  }
 }
 
 .label {
@@ -495,7 +486,33 @@ textarea {
   }
 }
 
+.form__input-error {
+  color: #e73737;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity, visibility;
+  transition-duration: 0.3;
+  transition-timing-function: ease;
+  margin-top: 4px;
+  display: block;
+}
+
 abbr {
   color: var(--red);
   text-decoration: none !important;
+}
+
+//Reset autofill styles
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.01) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
