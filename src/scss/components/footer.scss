@@ -151,6 +151,11 @@
   @include col-end(12);
   @include row-s(3);
   @include row-end(3);
+
+  @media (max-width: $br4) {
+    @include col-s(1);
+    @include col-end(4);
+  }
 }
 
 .footer__social-h3 {
